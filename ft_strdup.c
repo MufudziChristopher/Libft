@@ -6,16 +6,16 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:07:46 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 19:07:56 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/06/19 19:03:23 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 	char	*str;
 
 	len = 0;

@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 18:52:54 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 18:53:05 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/06/19 19:26:22 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int		i;
-	char 		*des;
+	int			i;
+	char		*des;
 	const char	sr;
 
 	i = 0;

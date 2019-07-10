@@ -6,25 +6,25 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:02:06 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 19:02:20 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/06/19 18:53:31 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char	*sr;
-	char 	*des;
+	char	*des;
 	size_t	i;
 
 	i = -1;
 	sr = (char *)src;
-	des = (char *) dest;
+	des = (char *)dest;
 	if (sr < des)
 		while ((int)(--n) >= 0)
 			*(des + n) = *(sr + n);
-	else 
+	else
 		while (++i < n)
 			*(des + i) = *(sr + i);
 	return (dest);

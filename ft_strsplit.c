@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 18:51:55 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 18:51:59 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/06/19 19:35:42 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,13 +57,13 @@ static size_t cut_words(const char *str, size_t words, char **r, char c)
 	while (w < words && str[start])
 	{
 		while (str[start] == c)
-			start+=;
+			start++;
 		end = start;
 		while (str[end] && str[end] != c)
 			end++;
 		if (!(r[w] = malloc(end - start + 1)))
 			return (0);
-		cpy(s[w], (char *)str + start, end - start);
+		cpy(str[w], (char *)str + start, end - start);
 		start = end + 1;
 		w++;
 	}
@@ -88,7 +88,7 @@ char	**ft_strsplit(char const *str, char c)
 	}
 	if (!(r = malloc((words + 1) * sizeof(*r))))
 		return (NULL);
-	if (Icut_words(str, words, r, c))
+	if (cut_words(str, words, r, c))
 		return (NULL);
 	r[words] = 0;
 	return (r);

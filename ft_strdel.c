@@ -6,17 +6,17 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:03:19 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 19:03:32 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/06/19 19:02:32 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_strdel(char **as)
 {
 	if (as != NULL)
 	{
-		free (*as);
+		free(*as);
 		*as = NULL;
 	}
 }

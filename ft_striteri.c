@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 18:59:57 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 19:00:13 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/06/19 19:33:07 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,3 @@ void	ft_striteri(char *s, void (*f)(unsigned in, char *))
 		f(i, s + i);
 	}
 }
-

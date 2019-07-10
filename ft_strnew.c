@@ -6,18 +6,18 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:00:46 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 19:00:56 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/06/19 19:15:36 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strnew(size_t size)
 {
 	void	*f;
-	int	i;
+	int		i;
 
-	i= 0;
+	i = 0;
 	f = malloc(l);
 	if (f != NULL)
 	{

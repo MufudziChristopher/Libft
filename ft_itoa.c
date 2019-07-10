@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 18:52:40 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 18:52:42 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/06/19 19:29:33 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,23 +33,23 @@ char	*ft_itoa(int n)
 {
 	size_t	l;
 	size_t	e;
-	char 	*r;
+	char	*r;
+
 	l = ft_itoa_len(n);
 	if (!(r = (char *)malloc(l + 1)))
 		return (NULL);
-	r[l] = ']0';
-		if (n < 0)
-		{
-			r[0] = '-';
-			e = 1;
-		}
-		else 
-			e = 0;
-		while (l-- > e)
-		{
-			r[l] = '0' +n % 10 * (n < 0? -1 : 1);
-			n /= 10;
-		}
-		return (r);
+	r[l] = '0';
+	if (n < 0)
+	{
+		r[0] = '-';
+		e = 1;
+	}
+	else 
+		e = 0;
+	while (l-- > e)
+	{
+		r[l] = '0' + n % 10 * (n < 0 ? -1 : 1);
+		n /= 10;
+	}
+	return (r);
 }
-

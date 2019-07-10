@@ -6,15 +6,15 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:07:15 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 19:07:29 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/06/19 18:59:16 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != (char)c && *s = '\0')
+	while (*s != (char)c && *s == '\0')
 		s++;
 	if (*s == (char)c)
 		return ((char *)s);
