@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:02:51 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/19 18:55:43 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 21:55:53 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,13 @@ char	*ft_strcat(char *dest, const char *src)
 	int	j;
 
 	i = 0;
-	while (dest[i])
-		i++;
-	j = 0;
-	while (src[j])
+	j = ft_strlen(dest);
+	while (src[i])
 	{
-		dest[i + j] = src[j];
+		dest[j] = src[i];
 		j++;
+		i++;
 	}
-	dest[i + j] = '\0';
+	dest[j] = '\0';
 	return (dest);
 }

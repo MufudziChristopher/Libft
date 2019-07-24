@@ -6,15 +6,13 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 18:46:03 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 18:46:22 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 20:11:17 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
+	return (ft_islower(c) || ft_isupper(c));
 }

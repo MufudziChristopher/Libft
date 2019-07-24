@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 18:58:23 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/19 19:30:25 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 21:38:50 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_putendl(char const *s)
 {
-	ft_putstr(s);
+	ft_putstr((char *)s);
 	ft_putchar('\n');
 }

@@ -6,15 +6,15 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 18:51:55 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/19 19:35:42 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 22:35:08 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void 	cpy(char *dest, char *src, size_t n)
+static void		cpy(char *dest, char *src, size_t n)
 {
-	size_t	i;
+	size_t		i;
 
 	i = 0;
 	while (i < n)
@@ -27,18 +27,17 @@ static void 	cpy(char *dest, char *src, size_t n)
 
 static size_t	count_words(const char *str, char c)
 {
-	size_t 	i;
-	size_t 	words;
+	size_t		i;
+	size_t		words;
 
 	i = 0;
 	words = 0;
-
 	while (str[i])
 	{
 		while (str[i] == c)
 			i++;
 		if (!str[i])
-			break;
+			break ;
 		words++;
 		while (str[i] && str[i] != c)
 			i++;
@@ -46,11 +45,11 @@ static size_t	count_words(const char *str, char c)
 	return (words);
 }
 
-static size_t cut_words(const char *str, size_t words, char **r, char c)
+static size_t	cut_words(const char *str, size_t words, char **r, char c)
 {
-	size_t	w;
-	size_t	start;
-	size_t	end;
+	size_t		w;
+	size_t		start;
+	size_t		end;
 
 	w = 0;
 	start = 0;
@@ -70,12 +69,11 @@ static size_t cut_words(const char *str, size_t words, char **r, char c)
 	return (1);
 }
 
-
-char	**ft_strsplit(char const *str, char c)
+char			**ft_strsplit(char const *str, char c)
 {
-	size_t words;
-	char **r;
-	
+	size_t		words;
+	char		**r;
+
 	if (!str)
 		return (NULL);
 	words = count_words(str, c);
@@ -93,5 +91,3 @@ char	**ft_strsplit(char const *str, char c)
 	r[words] = 0;
 	return (r);
 }
-
-

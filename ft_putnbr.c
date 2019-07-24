@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:06:59 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/18 19:07:01 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 21:44:54 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ void	ft_putnbr(int n)
 	else if (n < 0)
 	{
 		ft_putchar('-');
-		ft_putnbr(-n);
+		n = -n;
 	}
 	else if (n >= 10)
 	{
 		ft_putnbr(n / 10);
-		ft_putchar(n % 10 + '0');
+		ft_putnbr(n % 10);
 	}
 	else
-		ft_putchar(n + '0');
+		ft_putchar(n + 48);
 }

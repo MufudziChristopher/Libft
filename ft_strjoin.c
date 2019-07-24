@@ -6,15 +6,15 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:03:49 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/19 19:31:42 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 22:29:59 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	* ft_strjoin (char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char		*dest;
+	char			*dest;
 	unsigned int	i;
 
 	i = 0;
@@ -30,4 +30,3 @@ char	* ft_strjoin (char const *s1, char const *s2)
 	dest[i] = '\0';
 	return (dest);
 }
-	

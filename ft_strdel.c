@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:03:19 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/19 19:02:32 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 22:10:39 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_strdel(char **as)
 {
-	if (as != NULL)
-	{
+	if (*as)
 		free(*as);
-		*as = NULL;
-	}
+	*as = NULL;
 }

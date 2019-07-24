@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 18:57:49 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/19 18:48:40 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 20:52:00 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	ft_memdel(void **ap)
 {
-	if (ap != NULL)
-	{
+	if (*ap)
 		free(*ap);
-		*ap = NULL;
-	}
+	*ap = NULL;
 }

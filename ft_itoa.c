@@ -6,7 +6,7 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 18:52:40 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/19 19:29:33 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 20:24:57 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static size_t	ft_itoa_len(int n)
 	return (r);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	size_t	l;
 	size_t	e;
@@ -44,7 +44,7 @@ char	*ft_itoa(int n)
 		r[0] = '-';
 		e = 1;
 	}
-	else 
+	else
 		e = 0;
 	while (l-- > e)
 	{

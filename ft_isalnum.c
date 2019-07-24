@@ -6,13 +6,13 @@
 /*   By: mnhamoin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:05:18 by mnhamoin          #+#    #+#             */
-/*   Updated: 2019/06/19 19:21:19 by mnhamoin         ###   ########.fr       */
+/*   Updated: 2019/07/24 20:08:26 by mnhamoin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
-	return ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
